@@ -3,7 +3,7 @@ from tqdm import tqdm
 import requests
 
 urls = ["https://raw.githubusercontent.com/Crazypersonalph/anicli-downloader/refs/heads/main/initiate.ps1",
-        ""]
+        "https://raw.githubusercontent.com/Crazypersonalph/anicli-downloader/refs/heads/main/scoop-install.ps1"]
 
 for i in urls:
     url = i.rsplit('/', 1)[-1]
@@ -29,3 +29,6 @@ p = subprocess.Popen(["powershell.exe -ExecutionPolicy RemoteSigned -file",
 p.communicate()
 
 os.remove("initiate.ps1")
+os.remove("scoop-install.ps1")
+
+input("Installation complete, by yours truly. Cyah! Press Enter to exit.")
