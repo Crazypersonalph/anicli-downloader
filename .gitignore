@@ -2,3 +2,4 @@ anicli-downloader.exe
 anicli-downloader.spec
 dist/*
 build/*
+icons/*
