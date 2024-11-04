@@ -8,3 +8,4 @@ urllib3==2.2.3
 wheel==0.44.0
 requests==2.32.3
 pip-system-certs==4.0
+pyinstaller==6.11.0
