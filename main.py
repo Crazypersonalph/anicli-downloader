@@ -35,7 +35,9 @@ p.communicate()
 os.remove("initiate.ps1")
 os.remove("scoop-install.ps1")
 
-input("Installation complete, by yours truly. Cyah! Press Enter to exit.")
+print("You can now run ani-cli by typing 'ani-cli' in the Git Bash profile in the Windows terminal.")
 
-p = subprocess.Popen([f"{home}\\scoop\\apps\\git\\current\\git-bash.exe", "ani-cli"], stdout=sys.stdout, shell=True)
+input("Installation complete, by yours truly. Cya. Press Enter to exit.")
+
+p = subprocess.Popen([f"{home}\\scoop\\apps\\git\\current\\git-bash.exe", "ani-cli"], stdout=sys.stdout, shell=True, start_new_session=True)
 p.communicate()
