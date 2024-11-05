@@ -14,8 +14,7 @@ void downloadFile(char *url, char *filename)
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
         curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
         curl_easy_setopt(curl, CURLOPT_URL, url);
-        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, FALSE);
-        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, FALSE);
+        curl_easy_setopt(curl, CURLSSLOPT_NATIVE_CA, TRUE);
         curl_easy_perform(curl);
         fclose(fp);
         curl_easy_cleanup(curl);
