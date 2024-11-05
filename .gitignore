@@ -3,3 +3,4 @@ anicli-downloader.spec
 dist/*
 build/*
 icons/*
+*.exe
